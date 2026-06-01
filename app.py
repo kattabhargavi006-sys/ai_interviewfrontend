@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-server_location = "http://127.0.0.1:8000"
+server_location =st.secrets["server_location"].rstrip("/")
 st.title("AI Interview Chat Bot 🚀")
 
 with st.form("Details"):
